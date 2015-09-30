@@ -1,8 +1,8 @@
-# async-q
+# async-fun-queue
 
 ![Build Status Images](https://travis-ci.org/springuper/async-queue.svg)
 
-a simple queue executing async functions linearly with pause/resume
+A simple queue executing async functions linearly with pause/resume
 
 ## Installation
 
