@@ -1,5 +1,5 @@
 {
-  "name": "asyncQueue",
+  "name": "async-fun-queue",
   "version": "1.0.0",
   "description": "a simple queue executing async functions linearly with pause/resume",
   "main": "lib/async-queue.js",

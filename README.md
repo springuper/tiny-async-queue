@@ -4,7 +4,7 @@ a simple queue executing async functions linearly with pause/resume
 ## Installation
 
 ```
-npm install asyncQueue
+npm install async-fun-queue
 ```
 
 ## Example
