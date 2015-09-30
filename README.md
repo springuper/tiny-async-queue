@@ -1,4 +1,7 @@
 # async-q
+
+![Build Status Images](https://travis-ci.org/springuper/async-queue.svg)
+
 a simple queue executing async functions linearly with pause/resume
 
 ## Installation
@@ -47,7 +50,7 @@ var queue = new AsyncQueue([1, 2, 3], function (job, done) {
     }, 100);
 });
 queue.on('pause', function () {
-    // pause is paused
+    // queue is paused
 });
 queue.on('resume', function () {
     // queue is resumed
