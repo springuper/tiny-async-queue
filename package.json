@@ -1,0 +1,32 @@
+{
+  "name": "asyncQueue",
+  "version": "1.0.0",
+  "description": "a simple queue executing async functions linearly with pause/resume",
+  "main": "lib/async-queue.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/springuper/async-queue.git"
+  },
+  "keywords": [
+    "async",
+    "queue",
+    "pause",
+    "resume"
+  ],
+  "author": "springuper@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/springuper/async-queue/issues"
+  },
+  "homepage": "https://github.com/springuper/async-queue#readme",
+  "devDependencies": {
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.3"
+  }
+}
