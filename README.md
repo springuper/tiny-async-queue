@@ -1,6 +1,6 @@
 # tiny-async-queue
 
-![Build Status Images](https://travis-ci.org/springuper/async-queue.svg)
+[![Build Status](https://travis-ci.org/springuper/tiny-async-queue.svg?branch=master)](https://travis-ci.org/springuper/tiny-async-queue)
 
 A simple queue executing async functions linearly with pause/resume
 
