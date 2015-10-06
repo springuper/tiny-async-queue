@@ -1,4 +1,4 @@
-# async-fun-queue
+# tiny-async-queue
 
 ![Build Status Images](https://travis-ci.org/springuper/async-queue.svg)
 
@@ -7,7 +7,7 @@ A simple queue executing async functions linearly with pause/resume
 ## Installation
 
 ```
-npm install async-fun-queue
+npm install tiny-async-queue
 ```
 
 ## Example
