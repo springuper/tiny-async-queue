@@ -68,4 +68,18 @@ describe('AsyncQueue', function () {
 
         queue.run();
     });
+
+    it('should emit `end` event if no jobs', function (done) {
+        var collection = [];
+        var queue = new AsyncQueue([], function (job, done) {
+            collection.push(job);
+            done();
+        });
+        queue.on('end', function () {
+            assert.deepEqual(collection, []);
+            done();
+        });
+
+        queue.run();
+    });
 });
