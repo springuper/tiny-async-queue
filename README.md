@@ -15,6 +15,7 @@ npm install tiny-async-queue
 The most common use case:
 
 ```js
+var collection = [];
 var queue = new AsyncQueue([1, 2, 3], function (job, done) {
     collection.push(job);
     // simulate async
@@ -24,15 +25,19 @@ var queue = new AsyncQueue([1, 2, 3], function (job, done) {
 });
 queue.on('jobStart', function (job) {
     // job begin to run
+    collection.push('jobStart:' + job);
 });
 queue.on('jobDone', function (job) {
     // job is done
+    collection.push('jobDone:' + job);
 });
 queue.on('end', function () {
     // all jobs are done
+    collection.push('allJobDone');
 });
 
 queue.run();
+console.log(collection); // => jobStart:1, 1, jobDone:1, ..., jodDone:3, allJobDone
 ```
 
 A more complicated use case, with `pause` and `resume` method to controll the execution process:
